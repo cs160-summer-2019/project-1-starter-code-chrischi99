@@ -1,20 +1,149 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Forecast</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Forecast CSS -->
+	<link rel="stylesheet" type="text/css" href = "forecast.css"/>
 	
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+
 
 </head>
 <body>
 	<!-- your single-location forecast interface here -->
+	<!-- Back, time, and City -->
+	<div id="Back_City_Time" class="wrapper">
+		<div class = "row">
+			<div class = "col-md-4">
+			<button id="navigateBtn" >Back</button>
+			</div>
+			<div class = "col-md-4">
+				<h4 class="location">Berkeley</h4>
+			</div>
+			<div class = "col-md-4">
+				<h4 class="time">1:30</h4>
+			</div>
+		</div>
+	</div>
+	<!-- Three dates of future Weather -->
+	<div id="Three_dates_button">
+		<div class = "row">
+			<div class = "col-md-4">
+			<h4 class = "day">Today</h4>
+			<button type="button" class="date" >5/10</button>
+			</div>
+			<div class = "col-md-4">
+			<h4 class = "day">Tomorrow</h4>
+			<button type="button" class="date" >5/11</button>
+			</div>
+			<div class = "col-md-4">
+			<h4 class = "day">Friday</h4>
+			<button type="button" class="date">5/12</button>
+			</div>	
+		</div>
+	</div>
+	<!-- Today Weather -->
+	<dir id = "today_weather">
+	<div class="weatherIcon">
+		<div class="Sunny">
+			<div class="inner"><img src="../../../Sunny.png" alt="Sunny icon" width="200" height="188" class="rounded-circle" > </div>
+		</div>
+	</div>
+<h5 class="conditions"><strong>Sunny</strong></h5>
+	<h4 class = "c_temp">Current: 67°</h4>
+	<p class="tempRange"> <span class="low">50°</span> | <span class="high">68°</span> </p>
+	</dir>
+	<!-- Hourly Forecast -->
+	
+<div id = "Hourly_time">
+			<h4>Hourly Forecast</h4>
+			<div class = "row">
+				<div class = "col-md-3">
+					<h5 class = "time">Current</h5>
+				</div>
+				<div class = "col-md-3">
+					<h5 class = "time">10:00</h5>
+				</div>
+				<div class = "col-md-3">
+					<h5 class = "time">11:00</h5>
+				</div>
+				<div class = "col-md-3">
+					<h5 class = "time">12:00</h5>
+				</div>
+			</div>
+		</div>
+		<div class = "Hourly time">
+			<div class = "row">
+				<div class = "col-md-3">
+					<div class="weatherIcon">
+						<div class="Sunny">
+						<div class="inner"><div class="inner"><img src="../../../Sunny.png" alt="Sunny icon" class="rounded-circle" style= "width:100px;height:50px;"> </div></div>
+						</div>
+					</div>
+				</div>
+				<div class = "col-md-3">
+					<div class="weatherIcon">
+						<div class="Sunny">
+						<div class="inner">
+						  <div class="inner"><img src="../../../Sunny.png" alt="Sunny icon" class="rounded-circle" style= "width:100px;height:50px;"> </div></div>
+						</div>
+					</div>
+				</div>
+				<div class = "col-md-3">
+					<div class="weatherIcon">
+						<div class="Sunny">
+						<div class="inner">
+						  <div class="inner"><img src="../../../Sunny.png" alt="Sunny icon" class="rounded-circle" style= "width:100px;height:50px;"> </div></div>
+						</div>
+					</div>
+				</div>
+				<div class = "col-md-3">
+					<div class="weatherIcon">
+						<div class="Sunny">
+						<div class="inner">
+						  <div class="inner"><img src="../../../Sunny.png" alt="Sunny icon" class="rounded-circle" style= "width:100px;height:50px;"> </div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class = "Hourly temp">
+			<div class = "row">
+				<div class = "col-md-3">
+					<h5>67°</h5>
+				</div>
+				<div class = "col-md-3">
+					<h5>67°</h5>
+				</div>
+				<div class = "col-md-3">
+					<h5>68°</h5>
+				</div>
+				<div class = "col-md-3">
+					<h5>67°</h5>
+				</div>
+			</div>
+		</div>
+		<div class = "Hourly weather">
+			<div class = "row">
+				<div class = "col-md-3">
+					<h5>Sunny</h5>
+				</div>
+				<div class = "col-md-3">
+					<h5>Sunny</h5>
+				</div>
+				<div class = "col-md-3">
+					<h5>Sunny</h5>
+				</div>
+				<div class = "col-md-3">
+					<h5>Sunny</h5>
+				</div>
+			</div>
+		</div>
+	
 </body>
 </html>
-
-
-
-
-

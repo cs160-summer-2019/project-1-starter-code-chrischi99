@@ -1,15 +1,219 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Comparison</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+	<link rel = "stylesheet" type="text/css" href = "comparsion.css" />
 
 </head>
 <body>
 	<!-- your comparison interface here -->
+	<div id = "top_info">
+		<div class = "row">
+			<div class = "col-md-4">
+				<div class = "time">
+					<h5 class = "current_time">1:30</h5>
+				</div>
+			</div>
+			<div class = "col-md-4">
+				<div class = "date">
+					<h5 class = "current_date">08/12</h5>
+				</div>
+			</div>
+		  <div class = "col-md-2">
+				<div class = "temperature_change">
+					<button id="unitBtn" data-units="f">°f</button>
+				</div>
+			</div>
+			<div class = "col-md-2">
+				<div class = "Edit_city">
+				  <button id="editBtn">Edit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<div id = "My_Cities">
+		<h2>My Cities</h2>
+</div>
+	<div class = "row">
+		<div class = "col-md-12">
+		<div class="button_box2">
+			<form class="form-wrapper-2 cf">
+		<input type="text" placeholder="Search/Add Cities here..." required>
+		<button type="submit">Search</button>
+			</form>
+		</div>
+		</div>
+		</div>
+		
+<div id = "Cities">
+	
+	<div class = "city_1">
+		<div class = "row">
+		<div class = "col-md-2">
+			<div class = "weather_icon">
+				<div class = "sunny"><img src="../../../Sunny.png" alt="Sunny icon" width="100" height="100" class="rounded-circle" ></div>
+			</div>
+		</div>
+		<div class = "col-md-3">
+			<div class = "city_name">
+				<h2>Berkeley</h2> 
+			</div>
+		</div>
+			<div class = "col-md-1"><div class = "location_icon">
+			<!--Location icon insert here-->
+				<div class = "location_icon">
+				<img src="../../../Locaiton.png" width="50" height="50" class="rounded-circle" ></div>
+		</div>
+		</div>
+		<div class = "col-md-2"><div class = "alert_icon">
+			<!--Alert icon  is here if needed-->
+		</div>
+		</div>
+		<div class = "col-md-2"><div class = "empty_space">
+			<!--Nothing is insert here-->
+		</div>
+		</div>
+		<div class = "col-md-2"><div class = "city_temperature">
+			<!--Temperature is insert here-->
+			<h3>67°</h3>
+		</div>
+		</div>	
+		</div>
+	</div>
+	<div class = "city_2">
+		<div class = "row">
+		<div class = "col-md-2">
+			<div class = "weather_icon">
+				<div class = "sunny"><img src="../../../Sunny.png" alt="Sunny icon" width="100" height="100" class="rounded-circle" ></div>
+			</div>
+		</div>
+		<div class = "col-md-3">
+			<div class = "city_name">
+				<h2>Oakland</h2> 
+			</div>
+		</div>
+			<div class = "col-md-1"><div class = "location_icon">
+			<!--Location icon insert here-->
+		</div>
+		</div>
+		<div class = "col-md-2"><div class = "alert_icon">
+			<!--Alert icon  is here if needed-->
+		</div>
+		</div>
+		<div class = "col-md-2"><div class = "empty_space">
+			<!--Nothing is insert here-->
+		</div>
+		</div>
+		<div class = "col-md-2"><div class = "city_temperature">
+			<!--Temperature is insert here-->
+			<h3>66°</h3>
+		</div>
+		</div>	
+		</div>
+	</div>
+	<div class = "city_3">
+	<div class = "row">
+		<div class = "col-md-2">
+			<div class = "weather_icon">
+				<div class = "sunny"><img src="../../../rainy.png" alt="Sunny icon" width="100" height="84" class="rounded-circle" ></div>
+			</div>
+		</div>
+		<div class = "col-md-3">
+			<div class = "city_name">
+				<h2>Beijing</h2> 
+			</div>
+		</div>
+			<div class = "col-md-1"><div class = "location_icon">
+			<!--Location icon insert here-->
+		</div>
+		</div>
+		<div class = "col-md-2"><div class = "alert_icon">
+			<!--Alert icon  is here if needed-->
+		  <div class = "alert_icon">
+				<img src="../../../Alert.png" width="100" height="100" class="rounded" >
+			</div>
+		</div>
+		</div>
+		<div class = "col-md-2"><div class = "empty_space">
+			<!--Nothing is insert here-->
+		</div>
+		</div>
+		<div class = "col-md-2"><div class = "city_temperature">
+			<!--Temperature is insert here-->
+			<h3>58°</h3>
+		</div>
+		</div>	
+		</div>
+	</div>
+	<div class = "city_4">
+		<div class = "row">
+		<div class = "col-md-2">
+			<div class = "weather_icon">
+				<div class = "sunny"><img src="../../../cloudy.png" alt="Sunny icon" width="100" height="100" class="rounded-circle" ></div>
+			</div>
+		</div>
+		<div class = "col-md-3">
+			<div class = "city_name">
+				<h2>Toronto</h2> 
+			</div>
+		</div>
+			<div class = "col-md-1"><div class = "location_icon">
+			<!--Location icon insert here-->
+		</div>
+		</div>
+		<div class = "col-md-2"><div class = "alert_icon">
+			<!--Alert icon  is here if needed-->
+		</div>
+		</div>
+		<div class = "col-md-2"><div class = "empty_space">
+			<!--Nothing is insert here-->
+		</div>
+		</div>
+		<div class = "col-md-2"><div class = "city_temperature">
+			<!--Temperature is insert here-->
+			<h3>62°</h3>
+		</div>
+		</div>	
+		</div>
+	</div>
+	<div class = "city_5">
+		<div class = "row">
+		<div class = "col-md-2">
+			<div class = "weather_icon">
+				<div class = "sunny"><img src="../../../Sunny.png" alt="Sunny icon" width="100" height="100" class="rounded-circle" ></div>
+			</div>
+		</div>
+		<div class = "col-md-3">
+			<div class = "city_name">
+				<h2>Tokyo</h2> 
+			</div>
+		</div>
+			<div class = "col-md-1"><div class = "location_icon">
+			<!--Location icon insert here-->
+		</div>
+		</div>
+		<div class = "col-md-2"><div class = "alert_icon">
+			<!--Alert icon  is here if needed-->
+		</div>
+		</div>
+		<div class = "col-md-2"><div class = "empty_space">
+			<!--Nothing is insert here-->
+		</div>
+		</div>
+		<div class = "col-md-2"><div class = "city_temperature">
+			<!--Temperature is insert here-->
+			<h3>60°</h3>
+		</div>
+		</div>	
+		</div>
+	</div>
+</div>
+
+	
 </body>
 </html>
