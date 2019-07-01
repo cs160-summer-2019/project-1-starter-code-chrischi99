@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Comparison</title>
+		<title>Comparison</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	
-	<link rel = "stylesheet" type="text/css" href = "comparsion.css" />
+	<script src="https://use.fontawesome.com/973aa1b100.js"></script>
+	<link rel = "stylesheet" type="text/css" href = "../../static/weather/css/comparsion.css" />
+	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
 
 </head>
 <body>
@@ -37,26 +39,24 @@
 		</div>
 	</div>
 <div id = "My_Cities">
-		<h2>My Cities</h2>
+		<h1>My Cities</h1>
 </div>
 	<div class = "row">
-		<div class = "col-md-12">
-		<div class="button_box2">
-			<form class="form-wrapper-2 cf">
-		<input type="text" placeholder="Search/Add Cities here..." required>
-		<button type="submit">Search</button>
-			</form>
+	  <div class = "col-md-2">
 		</div>
-		</div>
-		</div>
+		<div class = "col-md-7">
+			<input class="form-control" name="size" type="text" placeholder="Search/Add Cities.." /></div>
+	  <div class="col-md-1">
+        <button class="form-control " aria-hidden="true"><i class="fa fa-search"></i></button></div>
+</div>
 		
 <div id = "Cities">
 	
 	<div class = "city_1">
 		<div class = "row">
 		<div class = "col-md-2">
-			<div class = "weather_icon">
-				<div class = "sunny"><img src="../../../Sunny.png" alt="Sunny icon" width="100" height="100" class="rounded-circle" ></div>
+		  <div class = "weather_icon">
+				<div class = "sunny"><img src="../../static/weather/Assets/Sunny.png" alt="Sunny icon" width="100" height="100" class="rounded-circle" ></div>
 			</div>
 		</div>
 		<div class = "col-md-3">
@@ -67,7 +67,7 @@
 			<div class = "col-md-1"><div class = "location_icon">
 			<!--Location icon insert here-->
 				<div class = "location_icon">
-				<img src="../../../Locaiton.png" width="50" height="50" class="rounded-circle" ></div>
+			  <img src="../../static/weather/Assets/Locaiton.png" alt = "location icon" width="50" height="50" class="rounded-circle" ></div>
 		</div>
 		</div>
 		<div class = "col-md-2"><div class = "alert_icon">
@@ -89,7 +89,7 @@
 		<div class = "row">
 		<div class = "col-md-2">
 			<div class = "weather_icon">
-				<div class = "sunny"><img src="../../../Sunny.png" alt="Sunny icon" width="100" height="100" class="rounded-circle" ></div>
+				<div class = "sunny"><img src="../../static/weather/Assets/Sunny.png" alt="Sunny icon" width="100" height="100" class="rounded-circle" ></div>
 			</div>
 		</div>
 		<div class = "col-md-3">
@@ -120,7 +120,7 @@
 	<div class = "row">
 		<div class = "col-md-2">
 			<div class = "weather_icon">
-				<div class = "sunny"><img src="../../../rainy.png" alt="Sunny icon" width="100" height="84" class="rounded-circle" ></div>
+				<div class = "sunny"><img src="../../static/weather/Assets/rainy.png" alt="Rainy icon" width="100" height="84" class="rounded-circle" ></div>
 			</div>
 		</div>
 		<div class = "col-md-3">
@@ -134,9 +134,7 @@
 		</div>
 		<div class = "col-md-2"><div class = "alert_icon">
 			<!--Alert icon  is here if needed-->
-		  <div class = "alert_icon">
-				<img src="../../../Alert.png" width="100" height="100" class="rounded" >
-			</div>
+		  <div class = "alert_icon"> </div>
 		</div>
 		</div>
 		<div class = "col-md-2"><div class = "empty_space">
@@ -154,7 +152,7 @@
 		<div class = "row">
 		<div class = "col-md-2">
 			<div class = "weather_icon">
-				<div class = "sunny"><img src="../../../cloudy.png" alt="Sunny icon" width="100" height="100" class="rounded-circle" ></div>
+				<div class = "sunny"><img src="../../static/weather/Assets/cloudy.png" alt="Cloudy icon" width="100" height="100" class="rounded-circle" ></div>
 			</div>
 		</div>
 		<div class = "col-md-3">
@@ -185,7 +183,7 @@
 		<div class = "row">
 		<div class = "col-md-2">
 			<div class = "weather_icon">
-				<div class = "sunny"><img src="../../../Sunny.png" alt="Sunny icon" width="100" height="100" class="rounded-circle" ></div>
+				<div class = "sunny"><img src="../../static/weather/Assets/Sunny.png" alt="Sunny icon" width="100" height="100" class="rounded-circle" ></div>
 			</div>
 		</div>
 		<div class = "col-md-3">

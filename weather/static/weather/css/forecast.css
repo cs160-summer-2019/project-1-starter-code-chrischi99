@@ -12,7 +12,7 @@ html, body {
 	width: 100%;
 }
 body{
-	background-color: #3498db;
+	background-color: #65A6D0;
 	font-family: 'Alegreya Sans', sans-serif;
 	position: relative;
 	letter-spacing: 0.05rem;
@@ -21,14 +21,14 @@ body{
 	color: #fff;
 }
 #navigateBtn{
-	background: none;
-	border: 1px solid rgba(255,255,255,0.25);
-	border-radius: 50%;
-	color: #fff;
-	height: 40px;
-	transition: background 1s ease-in-out, border 0.2s ease-in-out;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-	width: 40px;
+	border-radius: 20%;
+	font-size: 1em;
+	padding-top: 5px;
+	background-color: #70B6E4;
+	color: white;
+	border-color: white;
+	border-width: medium;
+	width: 100px;
 }
 #Back_City_Time .location{
 	font-size: 2em;
@@ -67,6 +67,7 @@ body{
 #Three_dates_button{
 	margin-bottom: 10%;
 	padding: 0 10%;
+	
 }
 #Three_dates_button .day{
 	padding: 0;
@@ -76,12 +77,45 @@ body{
 #Three_dates_button .date{
 	padding: 0;
 	color:#fff;
-	background-color: #3498db;
 	font-weight: bold;
+	font-size: 1.5em;
 	text-transform: uppercase;
+	border-top-style: hidden;
+	border-left-style: hidden;
+	border-right-style: hidden;
+	background-color: #65A6D0;
+	border-bottom-style: inset;
 }
+#Three_dates_button .date1{
+	padding: 0;
+	color:#fff;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	border-top-style: hidden;
+	border-left-style: hidden;
+	border-right-style: hidden;
+	border-bottom-style: hidden;
+	background-color: #65A6D0;
+}
+#Three_dates_button .date2{
+	padding: 0;
+	color:#fff;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	border-top-style: hidden;
+	border-left-style: hidden;
+	border-right-style: hidden;
+	border-bottom-style: hidden;
+	background-color: #65A6D0;
+}
+
 #Hourly_time .time{
 	padding: 0;
 	font-weight: bold;
 	text-transform: uppercase;
+}
+.Sunny{
+	border-right:inset;
 }
