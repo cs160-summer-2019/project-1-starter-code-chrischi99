@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +8,7 @@
 	<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://use.fontawesome.com/973aa1b100.js"></script>
-	<link rel = "stylesheet" type="text/css" href = "../../static/weather/css/comparsion.css" />
+	<link rel = "stylesheet" type="text/css" href = "{% static 'weather/css/comparsion.css' %}" />
 
 </head>
 <body>
@@ -54,7 +55,7 @@
 		<div class = "row">
 		<div class = "col-md-2">
 		  <div class = "weather_icon">
-				<div class = "sunny"><img src="../../static/weather/Assets/Sunny.png" alt="Sunny icon" width="100" height="100" class="rounded-circle" ></div>
+				<div class = "sunny"><img src="{% static 'weather/Assets/Sunny.png' %}" alt="Sunny icon" width="100" height="100" class="rounded-circle" ></div>
 			</div>
 		</div>
 		<div class = "col-md-3">
@@ -65,7 +66,7 @@
 			<div class = "col-md-1"><div class = "location_icon">
 			<!--Location icon insert here-->
 				<div class = "location_icon">
-			  <img src="../../static/weather/Assets/Locaiton.png" alt="Sunny icon" width="50" height="50" class="rounded-circle" ></div>
+			  <img src="{% static 'weather/Assets/Locaiton.png' %}" alt="Location icon" width="50" height="50" class="rounded-circle" ></div>
 		</div>
 		</div>
 		<div class = "col-md-2"><div class = "alert_icon">
@@ -87,7 +88,7 @@
 		<div class = "row">
 		<div class = "col-md-2">
 			<div class = "weather_icon">
-				<div class = "sunny"><img src="../../static/weather/Assets/Sunny.png" alt="Sunny icon" width="100" height="100" class="rounded-circle" ></div>
+				<div class = "sunny"><img src="{% static 'weather/Assets/Sunny.png' %}" alt="Sunny icon" width="100" height="100" class="rounded-circle" ></div>
 			</div>
 		</div>
 		<div class = "col-md-3">
@@ -118,7 +119,7 @@
 	<div class = "row">
 		<div class = "col-md-2">
 			<div class = "weather_icon">
-				<div class = "sunny"><img src="../../static/weather/Assets/rainy.png" alt="Rainy icon" width="100" height="84" class="rounded-circle" ></div>
+				<div class = "sunny"><img src="{% static 'weather/Assets/rainy.png' %}" alt="Rainy icon" width="100" height="84" class="rounded-circle" ></div>
 			</div>
 		</div>
 		<div class = "col-md-3">
@@ -133,7 +134,7 @@
 		<div class = "col-md-2"><div class = "alert_icon">
 			<!--Alert icon  is here if needed-->
 		  <div class = "alert_icon">
-				<img src="../../static/weather/Assets/Alert.png" alt = "Alert icon" width="100" height="100" class="rounded" >
+				<img src="{% static 'weather/Assets/Alert.png' %}" alt = "Alert icon" width="100" height="100" class="rounded" >
 			</div>
 		</div>
 		</div>
@@ -152,7 +153,7 @@
 		<div class = "row">
 		<div class = "col-md-2">
 			<div class = "weather_icon">
-				<div class = "sunny"><img src="../../static/weather/Assets/cloudy.png" alt="Cloudy icon" width="100" height="100" class="rounded-circle" ></div>
+				<div class = "sunny"><img src="{% static 'weather/Assets/cloudy.png' %}" alt="Cloudy icon" width="100" height="100" class="rounded-circle" ></div>
 			</div>
 		</div>
 		<div class = "col-md-3">
@@ -183,7 +184,7 @@
 		<div class = "row">
 		<div class = "col-md-2">
 			<div class = "weather_icon">
-				<div class = "sunny"><img src="../../static/weather/Assets/Sunny.png" alt="Sunny icon" width="100" height="100" class="rounded-circle" ></div>
+				<div class = "sunny"><img src="{% static 'weather/Assets/Sunny.png' %}" alt="Sunny icon" width="100" height="100" class="rounded-circle" ></div>
 			</div>
 		</div>
 		<div class = "col-md-3">
