@@ -1,81 +1,58 @@
-/* CSS Document */
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-:focus {
-	outline: none;
+body{
+  background-color: #65A6D0;
+	font-family: 'Alegreya Sans', sans-serif;
+  position: relative;
+  color: #fff;
+  position: relative;
+	letter-spacing: 0.05rem;
+	line-height: 1.5;
 }
 html, body {
 	height: 100%;
 	width: 100%;
 }
-body{
-	background-color: #65A6D0;
-	font-family: 'Alegreya Sans', sans-serif;
-	position: relative;
-	letter-spacing: 0.05rem;
-	line-height: 1.5;
-	text-align: center;
-	color: #fff;
-}
 .City_button{
   color: #fff;
-  font-size: 2em;
+  font-size:1.5em;
   background-color: #65A6D0;
   border-top-style: hidden;
 	border-left-style: hidden;
 	border-right-style: hidden;
 	border-bottom-style: hidden;
 }
+
 #unitBtn {
 	background: none;
 	border: 1px solid rgba(255,255,255,0.25);
 	border-radius: 50%;
 	color: #fff;
-	height: 40px;
 	transition: background 1s ease-in-out, border 0.2s ease-in-out;
-	width: 40px;
 }
 #editBtn {
 	background: none;
 	border: 1px solid rgba(255,255,255,0.25);
 	border-radius: 50%;
 	color: #fff;
-	height: 40px;
 	transition: background 1s ease-in-out, border 0.2s ease-in-out;
-	width: 40px;
-}
-#My_Cities{
-	text-align: left;
-}
-.alert_icon{
-	padding-top: 7px;
-}
-.form-control{
-	border-radius: 10px;
-}
-
-.city_name{
-	padding-top: 40px;
 }
 .city_temperature{
-	padding-top: 50px;
+	padding-bottom: 20px;
+}
+.City_name{
+  padding-top:10px;
 }
 .weather_icon{
-    border-radius: 200px;
-    background-color:#2C86A7;
-    padding-left:25px;
-    padding-right:20px;
-    padding-top:20px;
-    padding-bottom:20px;
+  padding-top:10px;
 }
-.city_one{
-	border-bottom: 6px solid white;
+.temperature_change{
+  padding-top:5px;
 }
+.Edit_city{
+  padding-top:5px;
+}
+
 .location_icon{
-  padding-top:25px;
+  padding-left:15px;
 }
 .city_1{
 	border-bottom:inset;
@@ -87,5 +64,8 @@ body{
 	border-bottom: inset;
 }
 .city_4{
+	border-bottom: inset;
+}
+.city_5{
 	border-bottom: inset;
 }
